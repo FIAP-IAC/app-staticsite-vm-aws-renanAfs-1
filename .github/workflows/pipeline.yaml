@@ -39,8 +39,8 @@ jobs:
     - name: Step 06 - Terraform Apply
       run : terraform -chdir=./terraform apply -auto-approve tfplan
 
-      - name: Step 07 - Terraform Plan Destroy
+    - name: Step 07 - Terraform Plan Destroy
       run : terraform -chdir=./terraform plan -destroy -out tfplan
 
-      - name: Step 08 - Terraform Apply Destroy
+    - name: Step 08 - Terraform Apply Destroy
       run : terraform -chdir=./terraform apply -tfplan

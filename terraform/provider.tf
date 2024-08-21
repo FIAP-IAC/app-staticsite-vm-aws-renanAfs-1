@@ -8,7 +8,7 @@ terraform {
   backend "s3" {
     bucket         = "tf-s3-renan-001"
     key            = "terraform.tfstate"
-    dynamodb_table = "tf-dynamo-renan-001"
+    dynamodb_table = "tf-dynamo-renan-002"
     region         = "us-east-1"
   }
 }

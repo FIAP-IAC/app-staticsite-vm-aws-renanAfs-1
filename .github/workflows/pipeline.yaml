@@ -43,4 +43,4 @@ jobs:
       run : terraform -chdir=./terraform plan -destroy -out tfplan
 
     - name: Step 08 - Terraform Apply Destroy
-      run : terraform -chdir=./terraform apply -tfplan
+      run : terraform -chdir=./terraform apply tfplan
